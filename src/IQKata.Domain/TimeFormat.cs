@@ -1,10 +1,13 @@
-﻿namespace Kata.Domain
+﻿using System;
+using System.Globalization;
+
+namespace Kata.Domain
 {
     public class TimeFormat
     {
-        public static string GetReadableTime(in int timeAsInteger)
+        public static string GetReadableTime(int seconds)
         {
-            return "0";
+            return $"{seconds / 3600:d2}:{seconds / 60 % 60:d2}:{seconds % 60:d2}";
         }
     }
 }

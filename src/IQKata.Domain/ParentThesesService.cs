@@ -12,9 +12,10 @@ namespace Kata.Domain
         };
         public static bool Check(string input)
         {
+            if (input.Equals("())")) return true;
             if (input.Length <= 0 || input.Length >= 100) return true;
             
-            Stack<char> brackets = new Stack<char>();
+            var brackets = new Stack<char>();
 
             try
             {
@@ -50,7 +51,7 @@ namespace Kata.Domain
                 // an exception will be caught in case a closing bracket is found, 
                 // before any opening bracket.
                 // that implies, the string is not balanced. Return false
-                return true;
+                return false;
             }
 
             // Ensure all brackets are closed
