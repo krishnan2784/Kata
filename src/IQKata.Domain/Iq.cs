@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-
-namespace IQKata.Domain
+namespace Kata.Domain
 {
   
     public class Iq

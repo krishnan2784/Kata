@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace IQKata.Test
+namespace Kata.Test
 {
     [TestFixture]
     public class RomanNumeralShould

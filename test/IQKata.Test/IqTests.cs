@@ -1,8 +1,7 @@
+using Kata.Domain;
 using NUnit.Framework;
-using System;
-using IQKata.Domain;
 
-namespace IQKata.Test
+namespace Kata.Test
 {
     
     [TestFixture]
